@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import numpy as np
 
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
@@ -105,7 +106,13 @@ def train_model_ploynomial_regression(df):
     print(float(pollinreg.predict(polyreg.fit_transform([[2010]]))))
     print(float(pollinreg.predict(polyreg.fit_transform([[2020]]))))
     print(float(pollinreg.predict(polyreg.fit_transform([[2022]]))))
+    print("-----------")
 
+    # RMSE (Root mean squared error) answers the question: "How similar, on average, are the numbers in list1 to list2?"
+    rmse = np.sqrt(sm.mean_squared_error(y, y_predicted))
+    r2 = sm.r2_score(y, y_predicted)
+    print(rmse)
+    print(r2)
 
 
 
