@@ -19,3 +19,5 @@ Linear Regression and Polynomial Regression
 the Linear Regression solution is not accurat at all, but the Polynomial Regression solution is better, still not 100% perfect but still acceptable
 
 #### What else could be done for improvement of the accuracy?
+
+maybe bigger test data, or other regression framework/tool
