@@ -9,6 +9,8 @@ import sklearn.metrics as sm
 from sklearn.model_selection import train_test_split
 
 
+#https://github.com/datsoftlyngby/soft2022spring-DS/blob/main/Code/E7-4-Polynomial-Regression.ipynb
+
 def setup():
     pd.set_option('display.width', 400)
     pd.set_option('display.max_columns', 20)
